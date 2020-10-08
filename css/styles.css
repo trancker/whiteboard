@@ -1,0 +1,154 @@
+* {
+   box-sizing: border-box;
+   moz-box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+.round {
+	margin: 12px auto;
+	color: #555;
+	width: 20px;
+	font-size: 14px;
+	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	height: fit-content;
+	padding: 5px 0;
+	cursor: pointer;
+}
+
+.round:hover {
+	color: #162dff;
+}
+
+.round.active-brush {
+	font-weight: 700;
+	color: orange;
+}
+
+#brush-set {
+	left: 70px;
+	top: 125%;
+	opacity: 1;
+	padding: 10px;
+	position: absolute;
+	background: #c5c5c580;
+	border: 1px solid lightblue;
+	width: 42px;
+	border-radius: 21px;
+}
+
+.hide {
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in;
+  transition-property: all;
+  left: 0;
+  opacity: 0;
+}
+
+.tools {
+	display: block;
+	background-color: #555;
+}
+.actions {
+	display: block;
+	background-color: #9a7b7b;
+	top: 20px;
+  position: relative;
+}
+
+.clear {
+	clear: both;
+}
+
+#canvasWrapper {
+	background: white;
+	/*width: 1000px;height: 550px;*/
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+#myCanvas {
+	/*border: 2px solid #000; */
+	margin: 0 auto;
+	display: block;
+}
+
+#toolbar {
+  height: fit-content;
+  position: absolute;
+  width: 60px;
+	top: 200px;
+	left: 30px;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+#toolbar .radcontrol {
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-radius: 3px;
+	background-color: #4f4f4f;
+	display: inline-block;
+	text-align: center;
+	padding-top: 5px;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+#colors {
+	position: absolute;
+	left: 70px;
+	top: 0;
+	background-color: #c5c5c580;
+	border: 1px solid lightblue;
+	border-radius: 21px;
+}
+
+.swatch {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	margin: 10px;
+	border-radius: 50%;
+}
+
+.swatch.active {
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+	border: 2px solid #162dff;
+}
+
+.swatch:hover {
+	border: 1px solid #fff;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.drawTool {
+	cursor: pointer;
+	color: #fff;
+	height: 42px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+}
+.drawTool:hover {
+	color: black;
+}
+
+.drawTool:active {
+	background-color: #c5c5c56b;
+	color: white;
+}
+
+.drawTool.set {
+	background-color: #c5c5c56b;
+	border-right: 3px solid orange;
+	color: orange;
+	width: 100%;
+}
