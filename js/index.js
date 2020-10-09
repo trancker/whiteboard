@@ -192,7 +192,7 @@ var disengage = () => {
 }
 
 function addSwatches() {
-  var colors = [ '#ff0000', '#ff69b4', '#ffa500', '#008000', '#ffd700','#00ffd0', '#000', '#c5c5c5',];
+  var colors = [ '#ff0000', '#ff69b4', '#ffa500', '#008000', '#ffd700','#00ffd0', '#000', '#c5c5c5', #00008B];
   // var swatches = document.getElementsByClassName('swatch');
   for (var i = 0, n = colors.length; i < n; i++) {
 		var swatch = document.createElement('div');
