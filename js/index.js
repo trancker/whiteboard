@@ -1,3 +1,5 @@
+<!--Creating the index.js for configuring the real whiteboard web app. This will allow us brush, colour, paint, highlighter, and eraser work properly -->
+
 var canvas, dataURL, context, dragging, x, y,
 cPushArray = new Array(), activeLineWidth, cStep = -1;
 const POINTS = {
